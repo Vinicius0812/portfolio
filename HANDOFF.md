@@ -1,7 +1,7 @@
 # HANDOFF
 
 ## Objetivo
-Base de portfólio pessoal de Vinicius Araujo Ribeiro, com visual escuro editorial, acentos em azul e laranja, foco em apresentação profissional, responsividade e publicação via GitHub Pages.
+Base de portfólio pessoal de Vinícius Araujo Ribeiro, com visual escuro editorial, acentos em azul e laranja, foco em apresentação profissional, responsividade e publicação via GitHub Pages.
 
 ## Estado atual
 - Site estático em HTML, CSS e JavaScript puro
