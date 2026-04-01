@@ -1,29 +1,36 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description"
-        content="Portfólio pessoal de Vinicius Araujo Ribeiro, Analista de Sistemas com foco em front-end, experiência do usuário e segurança." />
-    <title>Vinicius Araujo Ribeiro | Portfólio</title>
+    <meta
+        name="description"
+        content="Portfólio pessoal de Vinícius Araujo Ribeiro, Analista de Sistemas com foco em front-end, experiência do usuário e segurança."
+    />
+    <title>Vinícius Araujo Ribeiro | Portfólio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
         href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Syne:wght@500;700;800&display=swap"
-        rel="stylesheet" />
+        rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
     <div class="page-shell">
         <header class="site-header">
-            <a class="brand" href="#top" aria-label="Página inicial de Vinicius Araujo Ribeiro">
+            <a class="brand" href="#top" aria-label="Página inicial de Vinícius Araujo Ribeiro">
                 <span class="brand-mark">VA</span>
-                <span class="brand-text">Vinicius Araujo Ribeiro</span>
+                <span class="brand-text">Vinícius Araujo Ribeiro</span>
             </a>
 
-            <nav class="site-nav" aria-label="Navegação principal">
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Abrir menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="site-nav" id="site-nav" aria-label="Navegação principal">
                 <a href="#sobre">Sobre</a>
                 <a href="#projetos">Projetos</a>
                 <a href="#trajetoria">Trajetória</a>
@@ -41,7 +48,7 @@
                         com foco em performance, experiência e evolução contínua.
                     </h1>
                     <p class="hero-text">
-                        Sou Vinicius Araujo Ribeiro, Analista de Sistemas com atuação em desenvolvimento
+                        Sou Vinícius Araujo Ribeiro, Analista de Sistemas com atuação em desenvolvimento
                         web e foco em front-end. Hoje concentro meu trabalho em interfaces bem construídas,
                         usabilidade e soluções com base técnica sólida.
                     </p>
@@ -108,11 +115,11 @@
                 <div class="section-heading">
                     <div>
                         <p class="section-kicker">Casos em destaque</p>
-                        <h2>Uma leitura mais visual das experiências que hoje definem meu repertório.</h2>
+                        <h2>Uma leitura visual das experiências que hoje definem meu repertório.</h2>
                     </div>
                     <p>
                         Estruturei esta área como casos curtos: contexto, responsabilidade, foco técnico e
-                        impacto percebido. Assim a seção já comunica melhor seu valor profissional.
+                        impacto percebido. Assim a seção comunica melhor meu valor profissional.
                     </p>
                 </div>
 
@@ -123,8 +130,19 @@
                             <div class="case-index">01</div>
                         </div>
 
+                        <div class="case-visual case-visual-dashboard" aria-hidden="true">
+                            <span class="visual-bar"></span>
+                            <span class="visual-bar"></span>
+                            <span class="visual-bar"></span>
+                            <div class="visual-panel">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+
                         <div class="case-body">
-                            <h3>Front-end do AVA com foco em experiência, clareza e evolução contínua</h3>
+                            <h3>AVA com foco em clareza e performance</h3>
                             <p>
                                 Na UNIUBE, atuo no desenvolvimento front-end do ambiente virtual de aprendizagem,
                                 trabalhando em interfaces acadêmicas que precisam ser claras, rápidas e sustentáveis.
@@ -153,8 +171,22 @@
                             <div class="case-index">02</div>
                         </div>
 
+                        <div class="case-visual case-visual-window" aria-hidden="true">
+                            <div class="visual-window-top">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <div class="visual-window-grid">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+
                         <div class="case-body">
-                            <h3>Desenvolvimento e manutenção de aplicações web em ambiente de entrega</h3>
+                            <h3>Aplicações web em rotina de entrega</h3>
                             <p>
                                 Na experiência anterior, atuei com desenvolvimento e manutenção de aplicações web,
                                 fortalecendo base prática de entrega, suporte técnico e adaptação a demandas do produto.
@@ -183,8 +215,14 @@
                             <div class="case-index">03</div>
                         </div>
 
+                        <div class="case-visual case-visual-security" aria-hidden="true">
+                            <div class="visual-ring"></div>
+                            <div class="visual-ring visual-ring-inner"></div>
+                            <div class="visual-core"></div>
+                        </div>
+
                         <div class="case-body">
-                            <h3>Especialização em Offensive Cyber Security para ampliar profundidade técnica</h3>
+                            <h3>Especialização para ampliar profundidade técnica</h3>
                             <p>
                                 A pós-graduação em andamento na FIAP representa um movimento claro de amadurecimento,
                                 conectando desenvolvimento, análise de sistemas e segurança ofensiva.
@@ -285,18 +323,17 @@
                     <div class="contact-links">
                         <a href="mailto:viniciusar0812@gmail.com">viniciusar0812@gmail.com</a>
                         <a href="tel:+5534992284255">(34) 99228-4255</a>
-                        <a href="#top">Vinicius Araujo Ribeiro</a>
+                        <a href="#top">Vinícius Araujo Ribeiro</a>
                     </div>
                 </div>
             </section>
         </main>
 
         <footer class="site-footer">
-            <p>© <span id="current-year"></span> Vinicius Araujo Ribeiro. Portfólio profissional.</p>
+            <p>© <span id="current-year"></span> Vinícius Araujo Ribeiro. Portfólio profissional.</p>
         </footer>
     </div>
 
     <script src="script.js"></script>
 </body>
-
 </html>
