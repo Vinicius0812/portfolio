@@ -61,7 +61,7 @@ h3,
 .brand-text {
     margin: 0;
     font-family: "Syne", sans-serif;
-    letter-spacing: -0.02em;
+    letter-spacing: 0;
 }
 
 p {
@@ -233,7 +233,7 @@ main {
 }
 
 .hero-copy {
-    justify-content: space-between;
+    justify-content: center;
     gap: 24px;
 }
 
@@ -254,7 +254,7 @@ main {
 h1 {
     font-size: clamp(2.8rem, 6vw, 5rem);
     line-height: 0.98;
-    max-width: 11ch;
+    max-width: 12ch;
     font-weight: 700;
 }
 
@@ -300,7 +300,8 @@ h3 {
 
 .hero-actions,
 .contact-links,
-.case-meta {
+.case-meta,
+.project-links {
     display: flex;
     flex-wrap: wrap;
     gap: 14px;
@@ -420,7 +421,7 @@ h3 {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: 1.1fr 1fr 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 20px;
 }
 
@@ -517,6 +518,12 @@ h3 {
     padding: 16px;
 }
 
+.case-visual-terminal {
+    display: grid;
+    gap: 16px;
+    padding: 16px;
+}
+
 .visual-window-top {
     display: flex;
     gap: 8px;
@@ -541,6 +548,34 @@ h3 {
     border-radius: 14px;
     border: 1px solid rgba(173, 201, 255, 0.08);
     background: linear-gradient(180deg, rgba(77, 163, 255, 0.18), rgba(255, 138, 61, 0.08));
+}
+
+.terminal-lines {
+    display: grid;
+    gap: 10px;
+}
+
+.terminal-lines span {
+    display: block;
+    height: 12px;
+    border-radius: 999px;
+    background: linear-gradient(90deg, rgba(77, 163, 255, 0.34), rgba(255, 138, 61, 0.12));
+}
+
+.terminal-lines span:nth-child(1) {
+    width: 78%;
+}
+
+.terminal-lines span:nth-child(2) {
+    width: 52%;
+}
+
+.terminal-lines span:nth-child(3) {
+    width: 88%;
+}
+
+.terminal-lines span:nth-child(4) {
+    width: 64%;
 }
 
 .case-visual-security {
@@ -595,7 +630,8 @@ h3 {
 }
 
 .case-meta span,
-.timeline-year {
+.timeline-year,
+.project-links a {
     padding: 8px 12px;
     border-radius: 999px;
     border: 1px solid rgba(173, 201, 255, 0.12);
@@ -605,7 +641,23 @@ h3 {
     font-weight: 800;
 }
 
+.project-links a {
+    color: var(--text);
+    text-decoration: none;
+}
+
+.project-links a:hover {
+    border-color: rgba(173, 201, 255, 0.26);
+    background: rgba(255, 255, 255, 0.08);
+}
+
 .project-card-featured .case-meta span {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.14);
+}
+
+.project-card-featured .project-links a {
     color: #fff;
     background: rgba(255, 255, 255, 0.1);
     border-color: rgba(255, 255, 255, 0.14);
@@ -753,6 +805,7 @@ h3 {
     }
 
     .section-heading {
+        flex-direction: column;
         align-items: start;
     }
 }
@@ -840,7 +893,7 @@ h3 {
     h1 {
         font-size: clamp(2.1rem, 10vw, 3rem);
         line-height: 1.02;
-        max-width: 9ch;
+        max-width: 10ch;
     }
 
     h2 {
@@ -888,12 +941,14 @@ h3 {
     }
 
     .case-meta,
+    .project-links,
     .contact-links,
     .hero-actions {
         gap: 10px;
     }
 
     .case-meta span,
+    .project-links a,
     .pill-grid span,
     .contact-links a {
         width: 100%;
