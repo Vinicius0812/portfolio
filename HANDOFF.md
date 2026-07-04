@@ -1,7 +1,7 @@
 # HANDOFF
 
 ## Objetivo
-Portfólio pessoal de Vinícius Araújo, com visual escuro editorial, acentos em azul e laranja, foco em freelas simples de desenvolvimento web, automações, integrações, APIs simples, landing pages, correções e manutenção de sistemas existentes.
+Portfólio pessoal de Vinícius Araujo Ribeiro, com visual escuro editorial, acentos em azul e laranja, foco em freelas simples de desenvolvimento web, automações, integrações, APIs simples, landing pages, correções e manutenção de sistemas existentes.
 
 ## Estado atual
 - Site estático em HTML, CSS e JavaScript puro

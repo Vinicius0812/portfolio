@@ -1,6 +1,6 @@
 # Portfólio
 
-Site estático do portfólio pessoal de Vinícius Araújo, com foco em freelas simples de desenvolvimento web, landing pages, correções, APIs simples, integrações, automações e manutenção de sistemas existentes.
+Site estático do portfólio pessoal de Vinícius Araujo Ribeiro, com foco em freelas simples de desenvolvimento web, landing pages, correções, APIs simples, integrações, automações e manutenção de sistemas existentes.
 
 ## Estrutura
 
