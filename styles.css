@@ -174,14 +174,16 @@ ul {
 }
 
 .site-nav a,
-.contact-links a {
+.contact-links a,
+.contact-copy {
     color: var(--text);
     text-decoration: none;
     position: relative;
 }
 
 .site-nav a::after,
-.contact-links a::after {
+.contact-links a::after,
+.contact-copy::after {
     content: "";
     position: absolute;
     left: 0;
@@ -195,8 +197,46 @@ ul {
 }
 
 .site-nav a:hover::after,
-.contact-links a:hover::after {
+.contact-links a:hover::after,
+.contact-copy:hover::after {
     transform: scaleX(1);
+}
+
+.contact-copy {
+    padding: 0;
+    border: 0;
+    background: transparent;
+    font: inherit;
+    cursor: pointer;
+}
+
+.contact-copy::before {
+    content: attr(data-tooltip);
+    position: absolute;
+    left: 50%;
+    bottom: calc(100% + 10px);
+    z-index: 2;
+    width: max-content;
+    max-width: 220px;
+    padding: 8px 10px;
+    border: 1px solid rgba(173, 201, 255, 0.18);
+    border-radius: 8px;
+    background: rgba(8, 18, 31, 0.96);
+    color: var(--text);
+    font-size: 0.78rem;
+    font-weight: 800;
+    line-height: 1.2;
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, 6px);
+    transition: opacity 160ms ease, transform 160ms ease;
+}
+
+.contact-copy:hover::before,
+.contact-copy:focus-visible::before,
+.contact-copy.is-copied::before {
+    opacity: 1;
+    transform: translate(-50%, 0);
 }
 
 main {
@@ -950,7 +990,8 @@ h3 {
     .case-meta span,
     .project-links a,
     .pill-grid span,
-    .contact-links a {
+    .contact-links a,
+    .contact-copy {
         width: 100%;
         text-align: center;
         justify-content: center;

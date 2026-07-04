@@ -5,6 +5,7 @@ const revealItems = document.querySelectorAll(
 const navToggle = document.querySelector(".nav-toggle");
 const siteNav = document.querySelector("#site-nav");
 const navLinks = document.querySelectorAll("#site-nav a");
+const copyButtons = document.querySelectorAll("[data-copy]");
 
 if (currentYear) {
     currentYear.textContent = new Date().getFullYear();
@@ -26,6 +27,49 @@ if (navToggle && siteNav) {
         });
     });
 }
+
+const copyToClipboard = async (value) => {
+    if (navigator.clipboard && window.isSecureContext) {
+        await navigator.clipboard.writeText(value);
+        return;
+    }
+
+    const field = document.createElement("textarea");
+    field.value = value;
+    field.setAttribute("readonly", "");
+    field.style.position = "fixed";
+    field.style.left = "-9999px";
+    document.body.appendChild(field);
+    field.select();
+    document.execCommand("copy");
+    field.remove();
+};
+
+copyButtons.forEach((button) => {
+    const defaultTooltip = button.dataset.tooltip || "Copiar";
+
+    button.addEventListener("click", async () => {
+        const value = button.dataset.copy;
+
+        if (!value) {
+            return;
+        }
+
+        try {
+            await copyToClipboard(value);
+            button.dataset.tooltip = "E-mail copiado";
+            button.classList.add("is-copied");
+        } catch (error) {
+            button.dataset.tooltip = "Não foi possível copiar";
+            button.classList.add("is-copied");
+        }
+
+        window.setTimeout(() => {
+            button.dataset.tooltip = defaultTooltip;
+            button.classList.remove("is-copied");
+        }, 2200);
+    });
+});
 
 if ("IntersectionObserver" in window && revealItems.length > 0) {
     const observer = new IntersectionObserver(
