@@ -802,10 +802,8 @@ h3 {
 
 .reveal {
     opacity: 0;
-    transform: translateY(26px);
     transition:
         opacity 700ms ease,
-        transform 700ms ease,
         box-shadow 220ms ease,
         border-color 220ms ease,
         background 220ms ease;
@@ -814,24 +812,14 @@ h3 {
 
 .reveal.is-visible {
     opacity: 1;
-    transform: translateY(0);
 }
 
-.project-card,
-.timeline article,
-.highlight-band article,
 .pill-grid span,
-.contact-card,
-.hero-card {
+.project-links a {
     transition:
         box-shadow 220ms ease,
         border-color 220ms ease,
         background 220ms ease;
-}
-
-.project-card:hover {
-    border-color: rgba(173, 201, 255, 0.24);
-    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.28);
 }
 
 .pill-grid span:hover {
