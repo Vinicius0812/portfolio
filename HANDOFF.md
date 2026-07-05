@@ -9,6 +9,11 @@ Portfólio pessoal de Vinícius Araujo Ribeiro, com visual escuro editorial, ace
 - Menu mobile com hambúrguer implementado
 - Casos visuais com mockups abstratos criados em CSS
 - Projetos reais destacados: Elixir/Elixir API, MailRecon, Alfred CLI e experiência corporativa anônima em sistema web
+- CTA principal direciona para WhatsApp com mensagem padrão
+- Contato copia e-mail para clipboard com feedback visual e acessível
+- Seção "Como funciona" explica etapas de conversa, escopo, prazo/valor e entrega
+- Metadados Open Graph/Twitter/canonical/JSON-LD configurados para a URL provável do GitHub Pages
+- Animações de hover em cards de texto foram reduzidas para um visual mais natural
 - Layout responsivo revisado para mobile, com limites de largura e tipografia reduzida em breakpoints menores
 - Arquivos gravados em UTF-8 sem BOM
 
@@ -25,6 +30,7 @@ Portfólio pessoal de Vinícius Araujo Ribeiro, com visual escuro editorial, ace
 - Substituição dos cases anteriores por projetos reais e um case corporativo anônimo
 - Atualização da lista de tecnologias para refletir os projetos analisados
 - Atualização do README com projetos destacados, forma de teste e observações de segurança
+- Implementação de melhorias de conversão, acessibilidade, SEO básico e redução de animações artificiais
 
 ## Commit relevante já enviado anteriormente
 - `21d0bb8` - `✨ feat: atualiza portfolio com layout responsivo e conteúdo real`
@@ -36,6 +42,7 @@ Portfólio pessoal de Vinícius Araujo Ribeiro, com visual escuro editorial, ace
 1. Adicionar link real de LinkedIn, se quiser exibir
 2. Publicar no GitHub Pages
 3. Criar imagens/screenshots reais dos projetos para substituir os mockups abstratos, se houver material
+4. Confirmar a URL final publicada; se houver domínio customizado, atualizar `canonical`, `og:url` e JSON-LD
 
 ## Observações de segurança
 - Não abrir nem copiar conteúdo de `.env`

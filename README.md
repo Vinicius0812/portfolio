@@ -15,6 +15,14 @@ Site estático do portfólio pessoal de Vinícius Araujo Ribeiro, com foco em fr
 - Alfred CLI: CLI em Go para automação de tarefas de projeto com YAML
 - Experiência corporativa: case textual e anônimo sobre manutenção de sistema web
 
+## Recursos atuais
+
+- CTA principal para WhatsApp com mensagem padrão
+- E-mail com cópia para área de transferência e feedback acessível
+- Seção "Como funciona" para explicar o processo de atendimento
+- Metadados básicos de compartilhamento e SEO para GitHub Pages
+- Animações reduzidas em cards de texto e suporte a `prefers-reduced-motion`
+
 ## Como testar
 
 Abra `index.html` no navegador ou sirva a pasta com um servidor estático simples.
